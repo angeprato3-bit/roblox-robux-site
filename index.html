@@ -7,25 +7,80 @@
     <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <!-- Fond Roblox avec blocs -->
+    <div class="background">
+        <div class="roblox-blocks">
+            <div class="block block-red"></div>
+            <div class="block block-yellow"></div>
+            <div class="block block-blue"></div>
+            <div class="block block-green"></div>
+            <div class="block block-red"></div>
+        </div>
+    </div>
+
     <div class="container">
+        <!-- Logo/Image Roblox -->
+        <div class="logo-section">
+            <svg class="roblox-logo" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                <rect x="20" y="20" width="50" height="50" fill="#FF0000"/>
+                <rect x="80" y="20" width="50" height="50" fill="#FFD700"/>
+                <rect x="140" y="20" width="40" height="50" fill="#0066FF"/>
+                <rect x="20" y="80" width="50" height="50" fill="#FFD700"/>
+                <rect x="80" y="80" width="50" height="50" fill="#FF0000"/>
+                <rect x="140" y="80" width="40" height="50" fill="#00CC00"/>
+                <rect x="50" y="140" width="100" height="40" fill="#FF0000"/>
+            </svg>
+            <h1 class="main-title">ROBUX GRATUIT</h1>
+        </div>
+
+        <!-- Contenu principal -->
         <div class="content">
-            <h1 class="title">ROBUX GRATUIT</h1>
+            <!-- Image décorative -->
+            <div class="image-container">
+                <svg class="robux-character" viewBox="0 0 150 200" xmlns="http://www.w3.org/2000/svg">
+                    <!-- TêteFd -->
+                    <rect x="40" y="20" width="70" height="70" fill="#FFCC99" stroke="#000" stroke-width="2"/>
+                    <!-- Yeux -->
+                    <rect x="55" y="40" width="12" height="12" fill="#000"/>
+                    <rect x="83" y="40" width="12" height="12" fill="#000"/>
+                    <!-- Sourire -->
+                    <path d="M 60 65 Q 75 75 90 65" stroke="#000" stroke-width="2" fill="none"/>
+                    <!-- Corps -->
+                    <rect x="50" y="95" width="50" height="60" fill="#FF0000" stroke="#000" stroke-width="2"/>
+                    <!-- Bras gauche -->
+                    <rect x="20" y="105" width="30" height="20" fill="#FFD700" stroke="#000" stroke-width="2"/>
+                    <!-- Bras droit -->
+                    <rect x="100" y="105" width="30" height="20" fill="#FFD700" stroke="#000" stroke-width="2"/>
+                    <!-- Jambes -->
+                    <rect x="55" y="160" width="15" height="35" fill="#0066FF" stroke="#000" stroke-width="2"/>
+                    <rect x="75" y="160" width="15" height="35" fill="#0066FF" stroke="#000" stroke-width="2"/>
+                </svg>
+            </div>
+
             <p class="subtitle">Gagnez des Robux dès maintenant!</p>
             
+            <!-- Formulaire -->
             <form class="form-container" id="robuxForm">
-                <label for="phone">Numéro de téléphone:</label>
-                <input 
-                    type="tel" 
-                    id="phone" 
-                    name="phone" 
-                    placeholder="+33 6 XX XX XX XX" 
-                    pattern="[0-9\s\+\-\(\)]+" 
-                    required
-                >
-                <button type="submit" class="btn-submit">Obtenir mes Robux</button>
+                <div class="form-group">
+                    <label for="phone" class="form-label">📱 Entrez votre numéro de téléphone :</label>
+                    <input 
+                        type="tel" 
+                        id="phone" 
+                        name="phone" 
+                        placeholder="Exemple: +33 6 12 34 56 78" 
+                        class="phone-input"
+                        required
+                    >
+                </div>
+                <button type="submit" class="btn-submit">✨ Obtenir mes Robux Gratuits ✨</button>
             </form>
 
             <div id="message" class="message"></div>
+
+            <!-- Info box -->
+            <div class="info-box">
+                <p>💰 Offre limitée - Robux offerts directement sur votre compte!</p>
+            </div>
         </div>
     </div>
 
